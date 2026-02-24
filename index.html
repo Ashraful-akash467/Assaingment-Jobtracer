@@ -13,23 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container sticky top-0 z-50 bg-white">
         <h1>Job Application Tracker</h1>
         <div class="header">
             <div class="header-card">
                 <h2>Total</h2>
-                 <p>8</p>
+                 <p>0</p>
             </div>
             <div class="header-card">
-                <h2>Interview</h2>
-                 <p>2</p>
+                <h2 class="green">Interview</h2>
+                 <p class="green">0</p>
             </div>
             <div class="header-card">
-                <h2>Reject</h2>
-                <p>1</p>
+                <h2 class="red">Reject</h2>
+                <p class="red">1</p>
             </div>
         </div>
         </header>
@@ -41,9 +41,9 @@
             <p>8 jobs</p>
         </div>
         <div class="filter">
-            <button class="btn1 bg-sky-500 hover:bg-sky-700 ...">All</button>
-            <button class="btn1 bg-sky-500 hover:bg-sky-700 ...">Interview</button>
-            <button class="btn1 bg-sky-500 hover:bg-sky-700 ...">Rejected</button>
+            <button class="btn1 btn btn-outline hover:bg-sky-700 button-transparent">All</button>
+            <button class="btn1 btn btn-outline hover:bg-sky-700 button-transparent">Interview</button>
+            <button class="btn1 btn btn-outline hover:bg-sky-700 button-transparent">Rejected</button>
         </div>
     </section>
  
@@ -54,120 +54,153 @@
             <h2>Mobile First Corp</h2>
             <p>React Native Developer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
         <p>Remote      • Full-time      • $130,000 - $175,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ... btn-outline">Not Applied</button>
         <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
-            <h2>Mobile First Corp</h2>
-            <p>React Native Developer</p>
+            <h2>WebFlow Agency</h2>
+            <p>Web Designer & Developer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
-        <p>Remote      • Full-time      • $130,000 - $175,000</p>
+        <p>Los Angeles, CA  • Part-time  • $80,000 - $120,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <p>Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
-            <h2>Mobile First Corp</h2>
-            <p>React Native Developer</p>
+            <h2>DataViz Solutions</h2>
+            <p>Data Visualization Specialist</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
-        <p>Remote      • Full-time      • $130,000 - $175,000</p>
+        <p>Boston, MA   • Full-time  • $125,000 - $165,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <p>Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
-            <h2>Mobile First Corp</h2>
-            <p>React Native Developer</p>
+            <h2>CloudFirst Inc</h2>
+            <p>Backend Developer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
-        <p>Remote      • Full-time      • $130,000 - $175,000</p>
+        <p>Seattle, WA  • Full-time     • $140,000 - $190,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <p>Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
-            <h2>Mobile First Corp</h2>
-            <p>React Native Developer</p>
+            <h2>Innovation Labs/h2>
+            <p>UI/UX Engineer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
-        <p>Remote      • Full-time      • $130,000 - $175,000</p>
+        <p>Austin, TX    • Full-time    • $110,000 - $150,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <p>Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
-            <h2>Mobile First Corp</h2>
-            <p>React Native Developer</p>
+            <h2>MegaCorp Solutions</h2>
+            <p>JavaScript Developer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
-        <p>Remote      • Full-time      • $130,000 - $175,000</p>
+        <p>New York, NY     • Full-time    • $130,000 - $170,00</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <p>Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
     <div class="job-card">
         <div class="job-delate">
             <div>
+            <h2>StartupXYZ</h2>
+            <p>Full Stack Engineer</p>
+            </div> 
+            <div></div>
+        </div>
+        <p>Remote    • Full-time    • $120,000 - $160,000</p>
+        <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
+        <p>Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
+        <div class="button-group">
+            <button class="btn btn-accent btn-outline">Interview</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
+        </div>
+        
+    </div>
+     <div class="job-card">
+        <div class="job-delate">
+            <div>
+            <h2>TechCorp Industries</h2>
+            <p>Senior Frontend Developer</p>
+            </div> 
+            <div></div>
+        </div>
+        <p>San Francisco, CA     • Full-time    • $130,000 - $175,000</p>
+        <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
+        <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+        <div class="button-group">
+            <button class="btn btn-accent btn-outline">Interview</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
+        </div>
+        
+    </div>
+     <div class="job-card">
+        <div class="job-delate">
+            <div>
             <h2>Mobile First Corp</h2>
             <p>React Native Developer</p>
             </div> 
-            <div>button</div>
+            <div></div>
         </div>
         <p>Remote      • Full-time      • $130,000 - $175,000</p>
         <button class=" button btn bg-sky-500 hover:bg-sky-400 ...">Not Applied</button>
         <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
         <div class="button-group">
             <button class="btn btn-accent btn-outline">Interview</button>
-            <button class="btn btn-accent btn-outline">Rejected</button>
+            <button class="btn2 btn-accent btn-outline">Rejected</button>
         </div>
         
     </div>
-
 
 <div class="no-job">
         <div class="no-job-card">
@@ -177,6 +210,8 @@
     </div>
 
  </section>
-    
+ 
+
+ <script src="script.js"></script>
 </body>
 </html>

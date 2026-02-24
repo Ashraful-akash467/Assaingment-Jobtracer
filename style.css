@@ -6,17 +6,48 @@
    
 }
 
+
+.green{
+    color: rgb(80, 215, 8);
+}
+.red{
+    color: red;
+}
+
+
 .hover\:bg-sky-700 {
   &:hover {
     background-color: var(--color-sky-700);
             }
                             }
 
+                       
+.button-transparent {
+  background-color: transparent; /* always transparent */
+  color: #1e40af; /* text color - sky-800 */
+  border: 1px solid #1e40af; /* optional border */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect */
+.button-transparent:hover {
+  background-color: rgba(2, 132, 199, 0.2); /* light hover effect */
+}
+
+/* Active / clicked state - stays transparent */
+.button-transparent:active {
+  background-color: transparent;
+}
 
 .header-container{
+
     /* border: 1px solid black; */
     margin-top: 60px;
     margin-bottom: 20px;  
+    background-color: antiquewhite;
 
 }
 
@@ -114,6 +145,14 @@
     color: white;
     border: none;
     padding: 2px 10px;
+}
+.btn2{
+
+    background-color: transparent;
+    /* color: white; */
+    border: 1px solid red;
+    padding: 2px 10px;
+    border-radius: 5px;
 }
 .no-job{
     display: flex;
