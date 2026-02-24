@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
+    
+    
     var cards = document.querySelectorAll(".job-card");
     var filterBtns = document.querySelectorAll(".btn1");
+    // var noJob = document.querySelector("");
     var noJob = document.querySelector(".no-job");
 
     var totalText = document.querySelector(".header-card:nth-child(1) p");
@@ -17,13 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var statusBtn = card.querySelector(".button");
 
-        // create delete button
+        // create delete 
+          // create delete button
         var deleteBtn = document.createElement("button");
         deleteBtn.innerText = "Delete";
         deleteBtn.className = "btn btn-error btn-sm";
         card.querySelector(".job-delate div:last-child").appendChild(deleteBtn);
 
         // DELETE BUTTON
+         // DELETE 
         deleteBtn.addEventListener("click", function () {
 
             if (card.dataset.status == "interview" || card.dataset.status == "rejected") {
@@ -44,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             showCards();
         });
 
-        // INTERVIEW BUTTON
+        // INTERVIEW 
         card.querySelector(".button-group button:nth-child(1)")
             .addEventListener("click", function () {
 
@@ -60,14 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 showCards();
             });
 
-        // REJECT BUTTON
+        // REJECT 
         card.querySelector(".button-group button:nth-child(2)")
             .addEventListener("click", function () {
 
                 card.dataset.status = "rejected";
                 statusBtn.innerText = "Rejected";
 
-                // make red
+                //  red
                 statusBtn.classList.remove("bg-sky-500");
                 statusBtn.classList.remove("btn-success");
                 statusBtn.classList.add("btn-error");
@@ -77,7 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 
-    // FILTER BUTTONS
+
+    
+    // FILTER 
     filterBtns.forEach(function (btn) {
 
     btn.addEventListener("click", function () {
@@ -96,6 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
         showCards();
     });
 });
+
+
+    
 
     function showCards() {
         var visible = 0;
@@ -125,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+
+        
         if (visible == 0) {
             noJob.style.display = "block";
         } else {
@@ -132,7 +145,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // default active button = All
+
+
+    
+    // filter button 
 filterBtns[0].classList.add("bg-sky-500");
 filterBtns[0].classList.add("text-white");
     // Update count
@@ -160,7 +176,7 @@ filterBtns[0].classList.add("text-white");
         interviewText.classList.remove("text-green-600");
     }
 
-    // 🔹 Make Reject count red
+    // 🔹 Make Reject count 
     if (rejected > 0) {
         rejectText.classList.add("text-red-600");
     } else {
@@ -174,3 +190,20 @@ filterBtns[0].classList.add("bg-sky-500");
 filterBtns[0].classList.add("text-white");
     updateCount();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
