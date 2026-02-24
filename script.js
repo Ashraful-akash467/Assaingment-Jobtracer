@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var currentFilter = "all";
 
+
+    
     cards.forEach(function (card) {
 
         card.dataset.status = "all";
@@ -28,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         deleteBtn.className = "btn btn-error btn-sm";
         card.querySelector(".job-delate div:last-child").appendChild(deleteBtn);
 
+
+        
         // DELETE BUTTON
          // DELETE 
         deleteBtn.addEventListener("click", function () {
